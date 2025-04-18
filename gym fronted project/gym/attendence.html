@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fit-Club</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+    
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    
+</head>
+
+<body class="bg-white">
+    
+<div class="container">
+    <!-- <div class="row col-md-6 col-md-offset-3"> -->
+  <div>
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h1>MARK YOUR ATTENDENCE</h1>
+        </div>
+         <form name="theform">
+            <div class="form-group">
+              <label for="number">Gym-Id</label>
+              <input
+                type="number"
+                class="form-control"
+                id="number"
+                name="number"
+                required
+                onkeyup="checkform()"
+              />
+            </div>
+            <input type="submit"  id="formbtn"    disabled="disabled" onclick="checkformm()" class="btn btn-primary" />
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    function checkform(){
+        var f=document.forms['theform'].elements;
+        var fieldMustBeFilled=true;
+        for( var i=0;i<f.length;i++){
+           if(fieldMustBeFilled==0){
+            fieldMustBeFilled=false;
+           }
+           if(fieldMustBeFilled){
+            document.getElementById("formbtn").disabled = false;
+            document.getElementById("formbtn").style.backgroundColor="black";
+            document.getElementById("formbtn").style.color="white";
+           }
+           else{
+            document.getElementById("formbtn").disabled = true;
+           }
+        }
+    }
+    function checkformm(){
+        var number=document.getElementById('number');
+        window.location("https://quickchart.io/qr?text=3&size=200");
+    }
+  </script>
+</body>
+</html>

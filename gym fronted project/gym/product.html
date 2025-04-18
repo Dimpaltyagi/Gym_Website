@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FIT-CLUB</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 1.7rem;
+	font-family: 'Merriweather Sans', sans-serif;
+	background: #2c3e50;
+	color: #ececec;
+	padding: 4rem;
+}
+
+h2{
+	text-align: center;
+	margin-bottom: 5rem;
+	font-size: 4rem;
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+.btn{
+    padding:7px 12px;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(7, 4, 4);
+    background-color: rgb(227 74 56);
+    font-size: 15px;
+}
+.btn:hover{
+    color: blue;
+    background-color: yellow;
+    font-size: 18px;
+    
+}
+
+	</style>
+</head>
+<body>
+	<section class="products">
+		<h2>CONSULTED PRODUCT BY OUR GYM TRAINER </h2>
+		<div class="all-products">
+			<div class="product">
+				<img src="img/slider1.webp">
+				<div class="product-info">
+					<h4 class="product-title">Bigmuscles Nutrition Nitra Edge 32g Protein 
+					</h4>
+					<p class="product-price">₹1,749</p>
+					<button class="btn" onclick="fun1()">BUY</button>
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="img/slider2.jpg">
+				<div class="product-info">
+					<h4 class="product-title">Nutrabay Gold 100% Whey Protein Isolate 
+					</h4>
+					<p class="product-price">₹4,899</p>
+					<button class="btn" onclick="fun2()">BUY</button>
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="img/slider3.jfif">
+				<div class="product-info">
+					<h4 class="product-title">BURRDOFF Steel Shaker Bottles for Protein Shake
+					</h4>
+					<p class="product-price"> ₹1,549</p>
+					<button class="btn" onclick="fun3()">BUY</button>
+                    
+				</div>
+			</div>
+			<div class="product">
+				<img src="img/slider4.jpg">
+				<div class="product-info">
+					<h4 class="product-title">SFANE Polyester 23 cms Navy Blue Gym Bag, Shoulder Bag
+						</h4>
+					<p class="product-price">₹434</p>
+					<button class="btn" onclick="fun4()">BUY</button>
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="img/slider5.jpg">
+				<div class="product-info">
+					<h4 class="product-title">Ayurvedic Capsules for Scientific Weight Management  120 Capsules
+						</h4>
+					<p class="product-price"> ₹780</p>
+					<button class="btn" onclick="fun5()">BUY</button>
+
+				</div>
+			</div>	
+			<div class="product">
+				<img src="img/slider6.jpg">
+				<div class="product-info">
+					<h4 class="product-title">Natural Weight Loss Supplement - 60 Tablets
+						</h4>
+					<p class="product-price">₹434</p>
+					<button class="btn" onclick="fun6()">BUY</button>
+
+				</div>
+			</div>	
+			<div class="product">
+				<img src="img/slider1.webp">
+				<div class="product-info">
+					<h4 class="product-title">Bigmuscles Nutrition Nitra Edge 32g Protein 
+					</h4>
+					<p class="product-price">₹1,749</p>
+					<button class="btn" onclick="fun1()">BUY</button>
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="img/slider2.jpg">
+				<div class="product-info">
+					<h4 class="product-title">Nutrabay Gold 100% Whey Protein Isolate 
+					</h4>
+					<p class="product-price">₹4,899</p>
+					<button class="btn" onclick="fun2()">BUY</button>
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="img/slider3.jfif">
+				<div class="product-info">
+					<h4 class="product-title">BURRDOFF Steel Shaker Bottles for Protein Shake
+					</h4>
+					<p class="product-price"> ₹1,549</p>
+					<button class="btn" onclick="fun3()">BUY</button>
+                    
+				</div>
+			</div>
+			<div class="product">
+				<img src="img/slider4.jpg">
+				<div class="product-info">
+					<h4 class="product-title">SFANE Polyester 23 cms Navy Blue Gym Bag, Shoulder Bag
+						</h4>
+					<p class="product-price">₹434</p>
+					<button class="btn" onclick="fun4()">BUY</button>
+
+				</div>
+			</div>
+			<div class="product">
+				<img src="img/slider5.jpg">
+				<div class="product-info">
+					<h4 class="product-title">Ayurvedic Capsules for Scientific Weight Management  120 Capsules
+						</h4>
+					<p class="product-price"> ₹780</p>
+					<button class="btn" onclick="fun5()">BUY</button>
+
+				</div>
+			</div>	
+			<div class="product">
+				<img src="img/slider6.jpg">
+				<div class="product-info">
+					<h4 class="product-title">Natural Weight Loss Supplement - 60 Tablets
+						</h4>
+					<p class="product-price">₹434</p>
+					<button class="btn" onclick="fun6()">BUY</button>
+
+				</div>
+			</div>			
+		</div>
+	</section>
+	<div class="back"><a href="index.html">Back To Home</a></div>
+	<script>
+		function fun1(){
+				window.open("https://amzn.eu/d/8JwtrpE")
+		}
+		function fun2(){
+			window.open("https://amzn.eu/d/4y8YXNW")
+		}
+
+		function fun3(){
+			window.open("https://amzn.eu/d/iZWPxiK")
+		}
+		function fun4(){
+			window.open("https://amzn.eu/d/9oODAyD")
+		}
+		function fun5(){
+			window.open("https://amzn.eu/d/e8oONic")
+		}
+		function fun6(){
+			window.open("https://amzn.eu/d/grXPYpN")
+		}
+		
+	</script>
+</body>
+</html>
